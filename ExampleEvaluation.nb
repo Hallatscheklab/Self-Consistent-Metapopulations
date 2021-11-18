@@ -1,0 +1,440 @@
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[         0,          0]
+NotebookDataLength[     17640,        439]
+NotebookOptionsPosition[     15670,        391]
+NotebookOutlinePosition[     16066,        407]
+CellTagsIndexPosition[     16023,        404]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Load and evaluate for an example simulation results", "Title",
+ CellChangeTimes->{{3.824217827386833*^9, 3.8242178381978617`*^9}, {
+  3.8242207309778843`*^9, 3.824220732875972*^9}, {3.846164396299121*^9, 
+  3.8461644159018917`*^9}, {3.846166604029174*^9, 
+  3.846166609296206*^9}},ExpressionUUID->"7a54e743-45b0-4b4f-83b9-\
+48d707714985"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SpeciesExample", "=", "100"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DemesExample", "=", "200"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"LogDiffExample", "=", 
+   RowBox[{"-", "1"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Alpha]Example", "=", "0.1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"KExample", "=", "10"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"NExample", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<N_\>\"", "<>", 
+     RowBox[{"ToString", "[", 
+      RowBox[{"NumberForm", "[", 
+       RowBox[{
+        RowBox[{"N", "[", "SpeciesExample", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"10", ",", "6"}], "}"}]}], "]"}], "]"}], "<>", "\"\<_\>\"", "<>", 
+     RowBox[{"ToString", "[", 
+      RowBox[{"NumberForm", "[", 
+       RowBox[{
+        RowBox[{"N", "[", "LogDiffExample", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"10", ",", "6"}], "}"}]}], "]"}], "]"}], "<>", "\"\<_\>\"", "<>", 
+     RowBox[{"ToString", "[", 
+      RowBox[{"NumberForm", "[", 
+       RowBox[{
+        RowBox[{"N", "[", "\[Alpha]Example", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"10", ",", "6"}], "}"}]}], "]"}], "]"}], "<>", 
+     "\"\<.csv\>\""}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.846164458135701*^9, 3.8461644878302526`*^9}, {
+  3.846164555291217*^9, 3.846164562061957*^9}, {3.846166616247555*^9, 
+  3.846166640071253*^9}, {3.846166823860094*^9, 3.8461668288629713`*^9}},
+ CellLabel->
+  "In[1116]:=",ExpressionUUID->"f941d640-719a-41ef-af50-2cbc75959d57"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.8263738051796227`*^9, 3.826373811581101*^9}, {
+   3.826379201603668*^9, 3.8263792019460487`*^9}, {3.826379276775435*^9, 
+   3.826379277582368*^9}, {3.8263793118047*^9, 3.8263793186357193`*^9}, {
+   3.8263795367068567`*^9, 3.826379538865385*^9}, {3.827927526737691*^9, 
+   3.827927529441575*^9}, {3.827938434031434*^9, 3.827938434139205*^9}, 
+   3.83087873570603*^9, 3.83090529226449*^9, {3.830970891840887*^9, 
+   3.830970893534272*^9}, {3.83122866199924*^9, 3.8312286893095284`*^9}, {
+   3.8312287250822763`*^9, 3.831228735494629*^9}, {3.831462529346991*^9, 
+   3.831462532402155*^9}, {3.831569479739481*^9, 3.831569479850713*^9}, 
+   3.8322646973628263`*^9, {3.832264864450797*^9, 3.832264961172769*^9}, 
+   3.83226522823481*^9, {3.832336000964773*^9, 3.832336038843688*^9}, {
+   3.8323448125699987`*^9, 3.832344839807241*^9}, 3.832345056141478*^9, 
+   3.8323454377242193`*^9, {3.83234773830101*^9, 3.8323477839952917`*^9}, 
+   3.832348314774177*^9, 3.8323490023321447`*^9, {3.8323558384782743`*^9, 
+   3.832355840758679*^9}, {3.832418179080525*^9, 3.83241828343207*^9}, {
+   3.832418320569352*^9, 3.8324183205847607`*^9}, {3.832427306828985*^9, 
+   3.83242730948948*^9}, {3.832429228691494*^9, 3.832429238157206*^9}, {
+   3.832859471958797*^9, 3.8328594747269583`*^9}, 3.832860430258903*^9, {
+   3.832861651040565*^9, 3.8328616692623167`*^9}, 3.8328729867908373`*^9, {
+   3.8328781597496157`*^9, 3.832878173759101*^9}, {3.832879888316202*^9, 
+   3.8328798893093023`*^9}, 3.832898160394536*^9, {3.833672124380377*^9, 
+   3.833672124467153*^9}, {3.846164430774433*^9, 3.846164445421384*^9}, {
+   3.846164517716538*^9, 3.846164622526029*^9}, 
+   3.846166614279986*^9},ExpressionUUID->"1faa7eee-1202-409d-bb1d-\
+c6b4e254c1d5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Example Plots of the dynamics", "Title",
+ CellChangeTimes->{{3.8263781297111607`*^9, 3.8263781331698914`*^9}, {
+  3.846166656501493*^9, 
+  3.846166664629478*^9}},ExpressionUUID->"0c6e123f-1232-4f95-a538-\
+cc12aef5179f"],
+
+Cell[CellGroupData[{
+
+Cell["Profile of a certain species at a certain time", "Section",
+ CellChangeTimes->{{3.8322666513566847`*^9, 3.8322666550745487`*^9}, {
+   3.846164727940618*^9, 3.846164750269786*^9}, 
+   3.846166650710369*^9},ExpressionUUID->"efd2edda-a62b-4797-b416-\
+a86bf1f7f256"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"ListPlot", "[", 
+    RowBox[{
+     RowBox[{"NExample", "[", 
+      RowBox[{"[", 
+       RowBox[{
+        RowBox[{"t", "*", "SpeciesExample"}], "+", "s"}], "]"}], "]"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"All", ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "All"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+     RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+     RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+     RowBox[{"FrameStyle", "\[Rule]", 
+      RowBox[{"Directive", "[", 
+       RowBox[{"Black", ",", "10"}], "]"}]}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "300"}], ",", 
+     RowBox[{"AspectRatio", "\[Rule]", " ", "0.7"}], ",", 
+     RowBox[{"ImagePadding", "\[Rule]", " ", "40"}], ",", 
+     RowBox[{"FrameLabel", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Demes\>\"", ",", "\"\<Abundance\>\""}], "}"}]}]}], "]"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "1", ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Length", "[", "NExample", "]"}], "/", "SpeciesExample"}], "-",
+       "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"s", ",", "1", ",", "SpeciesExample", ",", "1"}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.846164917827688*^9, 3.846164928419743*^9}, {
+  3.8461688150378942`*^9, 3.8461688225916357`*^9}},
+ CellLabel->
+  "In[1111]:=",ExpressionUUID->"ed314b19-6a71-4842-9542-6a1ac8fd20c3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Mean abundance of a species over time", "Section",
+ CellChangeTimes->{{3.832266696301313*^9, 3.832266704245124*^9}, {
+  3.846164796884819*^9, 3.8461648113793793`*^9}, {3.846164984689012*^9, 
+  3.8461649874335127`*^9}},ExpressionUUID->"564db94c-76ee-4271-8c26-\
+169668b02b3e"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"ListPlot", "[", 
+    RowBox[{
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"Mean", "[", 
+        RowBox[{"NExample", "[", 
+         RowBox[{"[", 
+          RowBox[{
+           RowBox[{"t", "*", "SpeciesExample"}], "+", "s"}], "]"}], "]"}], 
+        "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "1", ",", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Length", "[", "NExample", "]"}], "/", "SpeciesExample"}], 
+          "-", "1"}], ",", "1"}], "}"}]}], "]"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"All", ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "All"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+     RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+     RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+     RowBox[{"FrameStyle", "\[Rule]", 
+      RowBox[{"Directive", "[", 
+       RowBox[{"Black", ",", "10"}], "]"}]}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "300"}], ",", 
+     RowBox[{"AspectRatio", "\[Rule]", " ", "0.7"}], ",", 
+     RowBox[{"ImagePadding", "\[Rule]", " ", "40"}], ",", 
+     RowBox[{"FrameLabel", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Time\>\"", ",", "\"\<Mean Abundance\>\""}], "}"}]}]}], 
+    "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"s", ",", "1", ",", "SpeciesExample", ",", "1"}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.832338571860117*^9, 3.83233859364515*^9}, {
+   3.832347135546653*^9, 3.832347142881328*^9}, {3.832418321336462*^9, 
+   3.832418350279769*^9}, {3.832878551777219*^9, 3.832878577639624*^9}, {
+   3.832878749431706*^9, 3.8328788330951557`*^9}, {3.83287912548042*^9, 
+   3.832879136621626*^9}, {3.833672125045073*^9, 3.833672125060609*^9}, {
+   3.846164681165612*^9, 3.846164699815302*^9}, 3.846164895153479*^9, {
+   3.8461649822021227`*^9, 3.84616501027104*^9}, {3.846168841301344*^9, 
+   3.846168847127873*^9}, {3.846168931074285*^9, 3.846168932698833*^9}},
+ CellLabel->
+  "In[1113]:=",ExpressionUUID->"fb239575-b678-4fb3-951b-b017ce78ac19"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Mean abundance on a deme", "Section",
+ CellChangeTimes->{{3.846166350993368*^9, 
+  3.846166360280246*^9}},ExpressionUUID->"b168a138-f648-448e-9c9e-\
+2b51645e1886"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"ListPlot", "[", 
+    RowBox[{
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"Mean", "[", 
+        RowBox[{"NExample", "[", 
+         RowBox[{"[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"t", "*", "SpeciesExample"}], ";;", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"t", "+", "1"}], ")"}], "*", "SpeciesExample"}]}], ",", 
+           "d"}], "]"}], "]"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "1", ",", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Length", "[", "NExample", "]"}], "/", "SpeciesExample"}], 
+          "-", "1"}], ",", "1"}], "}"}]}], "]"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"All", ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "All"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+     RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+     RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+     RowBox[{"FrameStyle", "\[Rule]", 
+      RowBox[{"Directive", "[", 
+       RowBox[{"Black", ",", "10"}], "]"}]}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "300"}], ",", 
+     RowBox[{"AspectRatio", "\[Rule]", " ", "0.7"}], ",", 
+     RowBox[{"ImagePadding", "\[Rule]", " ", "40"}], ",", 
+     RowBox[{"FrameLabel", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Time\>\"", ",", "\"\<Mean Abundance\>\""}], "}"}]}]}], 
+    "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"d", ",", "1", ",", "DemesExample", ",", "1"}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.832779201414506*^9, 3.832779219755371*^9}, {
+   3.832779293235314*^9, 3.8327792938189497`*^9}, 3.83293918478086*^9, {
+   3.832939387259721*^9, 3.8329393874002237`*^9}, {3.832939449387936*^9, 
+   3.832939449743226*^9}, {3.832939491132197*^9, 3.832939493353326*^9}, {
+   3.83293966599515*^9, 3.832939668519589*^9}, {3.8329397643145323`*^9, 
+   3.8329397780721607`*^9}, 3.8329407189750443`*^9, {3.833672125160811*^9, 
+   3.833672125175812*^9}, {3.846164699934352*^9, 3.846164699938386*^9}, {
+   3.8461663689678087`*^9, 3.8461664053539953`*^9}, {3.846168948841687*^9, 
+   3.846168949071032*^9}},
+ CellLabel->
+  "In[1114]:=",ExpressionUUID->"e7549533-3514-4f2e-b2c6-e1944abf1800"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Kymograph", "Section",
+ CellChangeTimes->{{3.846166689216202*^9, 
+  3.8461666945147543`*^9}},ExpressionUUID->"ed7cb019-081c-4b1e-8e05-\
+bd9b32c42c97"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ExampleColorScheme", "[", "z_", "]"}], ":=", 
+  RowBox[{"Blend", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"RGBColor", "[", 
+       RowBox[{"0.9", ",", "0.9", ",", "0.9"}], "]"}], ",", 
+      RowBox[{"RGBColor", "[", 
+       RowBox[{
+        RowBox[{"34", "/", "255"}], ",", 
+        RowBox[{"139", "/", "255"}], ",", 
+        RowBox[{"34", "/", "255"}]}], "]"}]}], "}"}], ",", "z"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.846166813425632*^9, 3.846166821717993*^9}, 
+   3.8461673466625834`*^9, {3.846167400597218*^9, 3.8461674093757668`*^9}},
+ CellLabel->
+  "In[1098]:=",ExpressionUUID->"723088ad-4263-4aec-be54-adbe90fb9545"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"ListContourPlot", "[", 
+    RowBox[{
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"NExample", "[", 
+        RowBox[{"[", 
+         RowBox[{
+          RowBox[{"t", "*", "SpeciesExample"}], "+", "s"}], "]"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "1", ",", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Length", "[", "NExample", "]"}], "/", "SpeciesExample"}], 
+          "-", "1"}], ",", "1"}], "}"}]}], "]"}], ",", 
+     RowBox[{"InterpolationOrder", "\[Rule]", "0"}], ",", 
+     RowBox[{"Contours", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"1", "/", "KExample"}], "}"}]}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"ColorFunction", "\[Rule]", "ExampleColorScheme"}], ",", 
+     RowBox[{"FrameLabel", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Demes\>\"", ",", "\"\<Time\>\""}], "}"}]}]}], "]"}], ",", 
+   
+   RowBox[{"{", 
+    RowBox[{"s", ",", "1", ",", "SpeciesExample", ",", "1"}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.846166726744814*^9, 3.846166874935946*^9}, {
+  3.846167361989555*^9, 3.8461674121040897`*^9}, {3.84616869890357*^9, 
+  3.846168724910715*^9}, {3.84616876927841*^9, 3.846168782734768*^9}},
+ CellLabel->
+  "In[1123]:=",ExpressionUUID->"4253ae26-2e5f-41a1-9bb7-ab0135910a2a"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`s$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`s$$], 1, 100, 1}}, Typeset`size$$ = {
+    419., {178., 182.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`s$$ = 1}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ListContourPlot[
+        Table[
+         Part[$CellContext`NExample, $CellContext`t \
+$CellContext`SpeciesExample + $CellContext`s$$], {$CellContext`t, 1, 
+          Length[$CellContext`NExample]/$CellContext`SpeciesExample - 1, 1}], 
+        InterpolationOrder -> 0, Contours -> {1/$CellContext`KExample}, 
+        PlotLegends -> Automatic, 
+        ColorFunction -> $CellContext`ExampleColorScheme, 
+        FrameLabel -> {"Demes", "Time"}], 
+      "Specifications" :> {{$CellContext`s$$, 1, 100, 1}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{464., {223., 229.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.846168725450403*^9, 3.8461687835908537`*^9, 
+  3.84616897642142*^9, 3.846242248949184*^9},
+ CellLabel->
+  "Out[1123]=",ExpressionUUID->"5c17d484-2fa3-44ff-9b5f-5c5f48902431"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1247, 755},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"7ecc2aab-3442-4da8-ad97-1ebb47e4a68e"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[422, 15, 344, 5, 98, "Title",ExpressionUUID->"7a54e743-45b0-4b4f-83b9-48d707714985"],
+Cell[769, 22, 1765, 45, 254, "Input",ExpressionUUID->"f941d640-719a-41ef-af50-2cbc75959d57"],
+Cell[2537, 69, 1774, 25, 30, "Input",ExpressionUUID->"1faa7eee-1202-409d-bb1d-c6b4e254c1d5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4348, 99, 225, 4, 98, "Title",ExpressionUUID->"0c6e123f-1232-4f95-a538-cc12aef5179f"],
+Cell[CellGroupData[{
+Cell[4598, 107, 268, 4, 67, "Section",ExpressionUUID->"efd2edda-a62b-4797-b416-a86bf1f7f256"],
+Cell[4869, 113, 1506, 39, 73, "Input",ExpressionUUID->"ed314b19-6a71-4842-9542-6a1ac8fd20c3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6412, 157, 281, 4, 67, "Section",ExpressionUUID->"564db94c-76ee-4271-8c26-169668b02b3e"],
+Cell[6696, 163, 2102, 49, 73, "Input",ExpressionUUID->"fb239575-b678-4fb3-951b-b017ce78ac19"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8835, 217, 169, 3, 67, "Section",ExpressionUUID->"b168a138-f648-448e-9c9e-2b51645e1886"],
+Cell[9007, 222, 2289, 54, 73, "Input",ExpressionUUID->"e7549533-3514-4f2e-b2c6-e1944abf1800"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11333, 281, 156, 3, 67, "Section",ExpressionUUID->"ed7cb019-081c-4b1e-8e05-bd9b32c42c97"],
+Cell[11492, 286, 690, 18, 30, "Input",ExpressionUUID->"723088ad-4263-4aec-be54-adbe90fb9545"],
+Cell[CellGroupData[{
+Cell[12207, 308, 1373, 34, 73, "Input",ExpressionUUID->"4253ae26-2e5f-41a1-9bb7-ab0135910a2a"],
+Cell[13583, 344, 2047, 42, 471, "Output",ExpressionUUID->"5c17d484-2fa3-44ff-9b5f-5c5f48902431"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
