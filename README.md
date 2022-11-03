@@ -2,7 +2,7 @@ Self-Consistent-Metapopulations
 
 Numeric simulation of a Metacommunity undergoing Lotka-Volterra interactions with migration and demographic noise
 
-Example code and evaluation used in this paper: (*link to paper*)
+Example code and evaluation used in this paper: https://www.pnas.org/doi/10.1073/pnas.2200390119
 
 
 MetacommunityDynamics.py: includes an example Python code to solve the stochastic metacommunity dynamics as detailed in the SI Appendix, section 1 (we used Python version 3.6.3). The parameters, including number of species etc., can be set when running the code in python, e.g. type
